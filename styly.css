@@ -1,0 +1,128 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: url('./lilies-1850750_12801.png');
+    background-size: cover;
+    font-family: 'Sono', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 95vh;
+}
+
+.main {
+    flex: 1;
+  }
+
+
+#container {
+    width: 100%;
+    margin: 0px auto;
+    background: rgba(255, 255, 255, 0.8); /* Průhledné pozadí pro kontejner */
+    padding: 20px;
+    border-radius: 10px; /* Zaoblené rohy */
+}
+
+.header-container {
+    background-color: var(--background-color);
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 0.5px solid #d0d0d0;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+
+
+header h1 {
+    color: #524F4a;
+    text-align: center;
+    margin-top: 0px;
+}
+
+#logo img {
+    float: inline-start;
+    margin-left: 120px;
+    width: 15%;
+    height: auto; /* Automatická výška */
+    border-radius: 10px; /* Zaoblené rohy */
+}
+
+
+/* Form */
+main {
+    text-align: center;
+    padding: 170px;
+}
+
+form {
+    float: inline;
+    text-align: center;
+    margin-right: 250px; 
+    min-width: none; -width: 400px; /* Omezení šířky formuláře */
+    min-height: 400px;
+}
+
+form input {
+margin-top: 20px;
+border: 2px solid grey;
+border-radius: 4px;
+height: 40px;
+width: 300px; 
+font-size: 20px;
+padding: 3px;
+margin-top: 15px;
+  
+}
+
+
+input[type=text-1] {
+    height: 80px;
+    text-align: left;   
+}
+
+
+input[type=submit] {
+    background-color: #F1F0EF;
+
+}
+
+input[type=submit]:hover {
+    background-color: #524F4a;
+    color: #F1F0EF;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1250px) {
+    .container {
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
